@@ -1,0 +1,94 @@
+// Here you can add other styles
+
+// Customize the appearance of scheduler
+
+.dx-scheduler-header {
+  display: none;
+}
+
+.dx-scheduler-work-space {
+  margin-top: 0px;
+  padding-top: 14px;
+}
+
+.dx-scheduler-work-space-day:not(.dx-scheduler-work-space-grouped) .dx-scheduler-all-day-title {
+  top: 15px;
+}
+
+.dx-scheduler-work-space-week .dx-scheduler-all-day-title {
+  top: 64px;
+}
+
+.dx-scheduler-appointment-content{
+  padding: 0px;
+  border: 1px solid #cccccc;
+}
+
+// Customize the apperance of wizard item in catalog
+
+.dx-list-item {
+  border: 1px solid #ddd !important;
+  margin-bottom: 10px;
+}
+
+.dx-list-item:last-of-type {
+  margin-bottom: none;
+}
+
+// Fix Bootstrap modal showing under backdrop
+.animated {
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+}
+
+.tooltip-inner {
+  max-width: initial !important;
+}
+
+.widget-element:hover {
+  border: 1px solid #82B1CE !important;
+}
+
+.widget-header {
+  height: 10px;
+  width: 100%;
+  background-color: #82B1CE;
+  cursor: pointer;
+
+  & .icon-settings {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: #EFFFDF;
+  }
+}
+
+.widget-header.expanded {
+  height: 30px;
+}
+
+.active-marker {
+  width: 100px;
+  margin: auto;
+  position: relative;
+  top: 7px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    border-top: 1px solid #C6DBE8;
+    border-bottom: 1px solid #C6DBE8;
+    height: 6px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    border-bottom: 1px solid #C6DBE8;
+    height: 12px;
+  }
+
+}
+

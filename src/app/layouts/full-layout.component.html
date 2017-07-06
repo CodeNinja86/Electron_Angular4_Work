@@ -1,0 +1,26 @@
+<header class="app-header navbar" [style.display]="showMenu ? '' : 'none' ">
+  <button appMobileSidebarToggler class="navbar-toggler hidden-lg-up" type="button">&#9776;</button>
+  <a class="navbar-brand" href="#" [routerLink]="['/dashboard']"></a>
+  <ul class="nav navbar-nav hidden-md-down">
+    <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLink]="['/play-tools']"><i
+      class="fa fa-bar-chart"></i> play-tools</a></li>
+  </ul>
+</header>
+
+<div class="app-body" [class.no-header]="!showMenu">
+
+  <app-auto-updater></app-auto-updater>
+
+  <!-- Main content -->
+  <main appMain class="main appMain">
+
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- /.conainer-fluid -->
+  </main>
+</div>
+
+<footer class="app-footer" [style.display]="showMenu ? '' : 'none' ">
+  &copy; 2017 <a href="http://www.highskillz.com/">HighSkillz Limited</a>
+</footer>

@@ -1,0 +1,13 @@
+.app-footer {
+  min-height: $footer-height;
+  padding: 0 $spacer-x;
+  line-height: $footer-height;
+  color: $footer-color;
+  background: $footer-bg;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: $zindex-navbar;
+  @include borders($footer-borders);
+}

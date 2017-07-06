@@ -1,0 +1,24 @@
+<div bsModal #modal="bs-modal" [config]="{'backdrop':'static', 'keyboard': false}" class="modal fade" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-dialog modal-primary" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          New Version is available
+        </h5>
+      </div>
+      <div class="modal-body text-center">
+        <div *ngIf="!isDownloading">
+          A new version is available. Do you wish to install it?
+        </div>
+        <div *ngIf="isDownloading">
+          {{progress.bytesPerSecond * 0.000001 | number:'1.2-2'}} mb/s
+          <br> {{progress.percent | number:'1.0-0'}} %
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button [disabled]="isDownloading" (click)="downloadUpdate()" type="button" class="btn btn-primary" style="margin: 0 auto;">Download & Install</button>
+        <button [disabled]="isDownloading" (click)="cancel()" type="button" class="btn btn-primary" style="margin: 0 auto;">Cancel</button>
+      </div>
+    </div>
+  </div>
