@@ -86,7 +86,7 @@
     "@types/jquery": "^2.0.34",
     "codelyzer": "2.0.1",
     "dateformat": "2.0.0",
-    "electron": "1.6.6",
+    "electron": "9.1.0",
     "electron-angular-toolkit": "0.0.9",
     "git-validate": "^2.2.2",
     "globby": "6.1.0",
